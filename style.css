@@ -1,0 +1,592 @@
+
+/*=================ICONS===================*/
+
+
+.fa1 {
+  padding: 0px 0;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa1:hover {
+    text-decoration: none;
+    color: white;
+    padding: 10px 34px;
+}
+
+.fa-facebook {
+  color: white;
+  z-index: 1111;
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+
+.icon-bar {
+    position: fixed;
+    top: 250px;
+    z-index: 878787;
+    left: 0px
+}
+.icon-bar:hover{
+  left: 0
+}
+
+.icon-bar a {
+    display: block;
+    padding:10px 1px;
+    margin: 0;
+    transition: all 0.3s ease;
+    font-size: 30px;
+}
+
+
+.myBtnq {
+  position: fixed !important;
+  bottom: 57px !important;
+  right: 3px !important; 
+  z-index: 9122222222222229 !important;
+  border: none !important;
+  outline: none !important;
+  background-color: black !important;
+  color: white !important;
+  cursor: pointer !important;
+  padding: 13px 10px!important;
+  border-radius: 0px !important;
+  border: 1px solid grey !important;
+  opacity: 0.5;
+}
+.myBtnq:hover {
+  opacity: 1;
+}
+
+
+.click_btn:hover{
+  background-color: white !important;
+  color: #009dac !important;
+}
+
+
+.learn_more:hover a{
+  color: #fff !important !important;
+  background-color: #009dac;
+}
+
+#search_icon:hover{
+  font-size: 28px !important;
+  cursor: pointer;
+}
+#close_search_form{
+  cursor: pointer;
+  font-size: 28px !important;
+}
+
+
+/*====================================*/
+
+
+
+
+
+/*Các tag chung của trang*/
+
+  body {
+      font: 400 15px Lato;
+      color: #818181;
+      font-family: Montserrat;
+      background-color: white !important
+  }
+  p{
+    font-size:14px;
+    font-weight: 100;
+    color: #818181;
+    line-height: 1.5;
+  }
+  h2 {
+      font-size: 24px;
+      color: #0e3033;
+      margin-bottom: 30px;
+      letter-spacing: .07em;
+      font-weight: 1000 !important;
+      font-family: arial !important
+  }
+  h3{
+    font-weight: 500;
+    color: #1d6166;
+  }
+  h4 {
+      font-size: 19px;
+      color: #818181;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .container-fluid {
+      padding: 5%;
+  }
+  .bg-grey {
+      background-color: #efefef;
+  }
+
+
+
+
+
+
+
+
+
+  /*phần navbar*/
+
+/*phần thanh tiến trình*/
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1122;
+  width: 100%;
+}
+
+
+
+  .navbar {
+      margin-bottom: 0;
+      background-color: #042b2a;
+      opacity: 0.9;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: black !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      color: white !important;
+  }
+  .navbar-default .navbar-toggle .icon-bar1 
+  {
+    background-color: white;
+  }
+  /*nút toggle*/
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+    color: black !important;
+  }
+
+
+/*thanh tiến trình*/
+
+.progress-container {
+  margin-top:51px;
+  width: 100%;
+  height: 5px;
+  background: white;
+}
+
+.progress-bar {
+  height: 5px;
+  background: #009dac;
+  width: 0%;
+}
+
+
+
+
+
+/**********************Banner side show***************************/
+
+
+
+.centered2 {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;                            /*đây là các thanh xanh xanh có chữ dưới ảnh slide*/
+    height: 18%;
+    background-color: #009dac;
+    opacity: 0.9;
+}
+
+.centered2 h3{
+  color: white;                          /*đây là các thanh xanh xanh có chữ dưới ảnh slide*/
+  line-height: 70px;
+  margin-left: 30%; 
+}
+
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+
+
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+
+
+
+/*tùy chỉnh cách hiển thị hợp lý phần member team qua từng kích thước màn hình*/
+
+  @media screen and (max-width: 1354px) {
+    .triangle-down3 {
+        display: none !important;
+    }
+  }
+
+  @media screen and (max-width: 1354px) {
+    .inline-icon-contact-list{
+        bottom: 38% !important; 
+    }
+  }
+
+ @media screen and (max-width: 1000px) {
+    .member{
+        padding: 0 8% !important
+    }
+  }
+ @media screen and (max-width: 768px) {
+    .member{
+        padding: 0 19% !important
+    }
+  }
+   @media screen and (max-width: 568px) {
+    .member{
+        padding: 0 10% !important
+    }
+  }
+
+
+/*/////////////Khi hover vào ảnh của member section////////////////////*/
+
+.vidai{
+  position: relative;
+  margin-bottom: 20px
+}
+
+
+/*danh sách icon liên hệ ở ảnh member section*/
+.inline-icon-contact-list{
+  background-color: white; 
+  width: 59.5%; 
+  margin: auto; 
+  height: 6%; 
+  bottom: 40%; 
+  right: 0; 
+  left: 0; 
+  position: absolute;
+}
+
+
+hr{
+  width: 50%; 
+  height: 3px; 
+  background-color: #1d6166
+}
+
+
+
+
+
+
+
+/*Phần nghiêng*/
+
+.triangle-down {
+
+  border-left: 1340px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 90px solid #efefef;
+}
+
+.triangle-down2 {
+
+  border-left: 1340px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 90px solid #efefef;
+}
+
+.triangle-down3 {
+
+  border-left: 157px solid transparent;
+  border-right: 157px solid transparent;
+  border-top: 27px solid #009dac;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*phần porfolio*/
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /*Phần bảng giá*/
+
+  .panel {
+      border: 1px solid #009dac; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #009dac;
+      background-color: #fff !important;
+      color: #009dac;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #009dac !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+
+  .icon-bar1{color: white}
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #009dac;
+      color: #fff;
+  }
+
+
+
+
+
+
+
+/******************************************FOOTER******************************************/
+
+
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #009dac; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: white !important;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: black;
+}
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #009dac;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #009dac; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********Phần live chat*****************/
+
+ #live_chat2:hover{
+  height: 37px !important;
+ }
+ 
+.box {
+   width: 300px;
+   height: auto;
+   display: none;
+   bottom: 0px;
+   right: 45px;
+   margin-left: -150px;
+   margin-top: -75px;
+   z-index: 10001;
+   position: fixed;
+ }
+ #popup{width: 300px;
+        height: auto;}
+
+#chat_frame{border: 2px solid #f43e3e;
+            border-radius: 5px;
+      box-shadow: 5px 5px 13px solid black;
+      background-color: #f43e3e;}
+      #text_typed{padding: 10px;}#text_typed:focus{outline: none;}
+      #send:focus{outline: none;}
+ 
+.close {
+   position: absolute;
+   top: 8px;
+   right: 20px;
+   display: inline;
+   cursor: pointer;
+   color: white;
+   opacity: 1;
+ }
+
+ .scroll {
+    background-color: #00FFFF;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+
+
+
+
+

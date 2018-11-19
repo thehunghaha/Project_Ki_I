@@ -1,0 +1,667 @@
+/*ĐÂY LÀ PHẦN SHARE*/
+
+.fa1 {
+padding: 0px 0;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa1:hover {
+text-decoration: none;
+color: white;
+padding: 10px 34px;
+}
+
+.fa-facebook {
+color: white;
+z-index: 1111;
+}
+
+.fa-twitter {
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.icon-bar {
+position: fixed;
+top: 250px;
+z-index: 878787;
+left: 0px
+}
+.icon-bar:hover{
+left: 0
+}
+
+.icon-bar a {
+display: block;
+padding:10px 1px;
+margin: 0;
+transition: all 0.3s ease;
+font-size: 30px;
+}
+
+
+
+
+
+/*phần lên đầu trang*/
+
+.myBtnq {
+position: fixed !important;
+bottom: 57px !important;
+right: 3px !important; 
+z-index: 9122222222222229 !important;
+border: none !important;
+outline: none !important;
+background-color: black !important;
+color: white !important;
+cursor: pointer !important;
+padding: 13px 10px!important;
+border-radius: 0px !important;
+border: 1px solid grey !important;
+opacity: 0.5;
+}
+.myBtnq:hover {
+opacity: 1;
+}
+
+
+
+
+/*Phần header*/
+
+#search_icon:hover{
+font-size: 28px !important;
+cursor: pointer;
+}
+#close_search_form{
+cursor: pointer;
+font-size: 28px !important;
+}
+
+.header {
+position: fixed;
+top: 0;
+z-index: 1122;
+width: 100%;
+}
+.logo {
+  color: #009dac;
+  font-size: 200px;
+}
+.container-fluid {
+  padding: 60px;
+}
+
+.logo-small {
+  color: #009dac;
+  font-size: 50px;
+}
+.icon-bar1{color: white}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: #042b2a !important ;
+  opacity: 0.9;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: black !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  color: white !important;
+}
+.navbar-default .navbar-toggle .icon-bar1 
+{
+background-color: white;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+background-color: #fff;
+color: red;
+}
+
+
+
+
+
+
+
+
+/*Phần Footer*/
+
+footer{background-color: #35a8b8;
+     margin-top: 10px}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #009dac;
+}
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #009dac; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: white !important;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: black;
+}
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #009dac;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #009dac; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the header: fixed position (always stay at the top) */
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #FFFFFF;
+}
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #FFFFFF;
+  width: 0%;   
+}
+
+#myBar { background-color: #FF4000;}
+
+
+
+
+
+
+
+.text1 p {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #818181;
+    line-height: 30px;
+    padding: 30px 200px;
+}	
+@media screen and (min-width:100px) and (max-width:699px){
+.text1 p{ padding: 20px;}
+.text1 h1{ padding: 20px;}
+}
+.text1 span {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: #818181;
+    display: block;
+    letter-spacing: 10px;
+    padding: 0 0 8px 0;
+	 padding-top: 130px;
+	}
+	
+	
+	
+	
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;
+   padding:30px; 
+    height: auto; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both; }
+    
+    
+    
+.column h2{
+font-family: 'Montserrat';
+    font-size: 35px;
+    color: #818181;
+    font-weight: 600;
+	padding: 0 0 10px 45px;
+}
+.column p{
+font-size: 21px;
+    line-height: 28px;
+    color: #666666;
+	padding: 0 0 0 15px;
+}  
+
+    
+ @media screen and (min-width:100px) and (max-width:699px){
+.column { float: none; }
+.column { width: 100%; } 
+}
+
+
+.clear {clear: both}
+
+
+
+
+
+
+
+
+
+
+
+.half-rule {
+width: 100px;
+margin: 40px auto;
+}
+
+.half-rule1 {
+width: 100px;
+margin: 10px auto;
+}
+
+
+hr {
+    border-top: 0px solid #eee;
+}
+.rowicon {
+width:1170px; height :287px;}
+ @media screen and (min-width:100px) and (max-width:699px){
+.rowicon {width:100%; height :auto;}
+}	
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+.album {
+    margin: 0 150px 0 150px;
+	padding-top: 0px;
+	
+	
+}
+.album, .w3-hover-shadow:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+@media screen and (min-width:100px) and (max-width:699px){
+.album {margin: 1px;}
+}
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Container around content */
+.containerqk {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.containerqk::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.contentqk {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .containerqk {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .containerqk::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+	
+	
+
+	
+
+figure {
+width: 70%;
+height: 70%;
+margin: 0;
+padding: 0;
+background: #fff;
+overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+	
+	
+	
+	
+	/* Rotate */
+.hover06 figure img {
+	
+	
+	-webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
+	
+
+
+}
+
+.hover06 figure:hover img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+	
+}
+	
+.hover06 p {
+color: #818181;
+font-family: Montserrat;
+font-size: 20px;
+}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+	
+/* Gray */
+.default {
+  border-color: black;
+  color: black;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+
+
+
+.triangle-down {
+
+  border-left: 1348px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 90px solid black;
+}
+
+.triangle-down1 {
+
+  border-left: 1348px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 90px solid #e6e6e6;
+}
+
+	
+       .jssorl-009-spin img {
+            animation-name: jssorl-009-spin;
+            animation-duration: 1.6s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes jssorl-009-spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        /*jssor slider arrow skin 106 css*/
+        .jssora106 {display:block;position:absolute;cursor:pointer;}
+        .jssora106 .c {fill:#fff;opacity:.3;}
+        .jssora106 .a {fill:none;stroke:#000;stroke-width:350;stroke-miterlimit:10;}
+        .jssora106:hover .c {opacity:.5;}
+        .jssora106:hover .a {opacity:.8;}
+        .jssora106.jssora106dn .c {opacity:.2;}
+        .jssora106.jssora106dn .a {opacity:1;}
+        .jssora106.jssora106ds {opacity:.3;pointer-events:none;}
+
+        /*jssor slider thumbnail skin 101 css*/
+        .jssort101 .p {position: absolute;top:0;left:0;box-sizing:border-box;background:#000;}
+        .jssort101 .p .cv {position:relative;top:0;left:0;width:100%;height:100%;border:2px solid #000;box-sizing:border-box;z-index:1;}
+        .jssort101 .a {fill:none;stroke:#fff;stroke-width:400;stroke-miterlimit:10;visibility:hidden;}
+        .jssort101 .p:hover .cv, .jssort101 .p.pdn .cv {border:none;border-color:transparent;}
+        .jssort101 .p:hover{padding:2px;}
+        .jssort101 .p:hover .cv {background-color:rgba(0,0,0,6);opacity:.35;}
+        .jssort101 .p:hover.pdn{padding:0;}
+        .jssort101 .p:hover.pdn .cv {border:2px solid #fff;background:none;opacity:.35;}
+        .jssort101 .pav .cv {border-color:#fff;opacity:.35;}
+        .jssort101 .pav .a, .jssort101 .p:hover .a {visibility:visible;}
+        .jssort101 .t {position:absolute;top:0;left:0;width:100%;height:100%;border:none;opacity:.6;}
+        .jssort101 .pav .t, .jssort101 .p:hover .t{opacity:1;}
+
+
+.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}

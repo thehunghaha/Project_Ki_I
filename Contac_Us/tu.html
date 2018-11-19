@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <title>contact us</title>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <link REL="SHORTCUT ICON" HREF="../icon_title_2.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" type="text/css" href="style_contact.css">
+
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+</head>
+<style>
+  .submit{
+    background: white;
+   
+    color:#009dac   ;
+    z-index: 99999;
+    text-align: center;
+    width: 25%;
+    height: 200%;
+    text-decoration: none;
+
+ }
+
+.submit:hover {
+    
+    
+   
+    background:#009dac !important;
+    border: none;
+     text-decoration: none;
+
+    color: white !important ;
+    font-family: Montserrat;
+     
+    transition: 0.1s ease;
+    cursor: pointer;
+    border:1px solid #009dac;
+   
+}
+
+
+
+
+</style>
+<body style="font-family: Montserrat !important !important">
+
+  <!-- ------------- NAV BAR (thanh header) ----------------- -->
+ <div class="rows" style="background: black;>
+<div class="header">
+<nav class="navbar navbar-default navbar-fixed-top" style="background:black; ">
+    <div class="container" style="background: black;">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            </button>
+            <a class="navbar-brand" href="../E_Project.html"><img src="logo2.png" style="height:200%; margin-top: -10px;">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../About_Us/do_an.html"><span class="glyphicons glyphicons-binoculars"></span><b>ABOUT</b></a>
+                </li>
+                <li><a href="../service/service-event.html"><b>SERVICES</b></a>
+                </li>
+                <li><a href="tu.html"><b>CONTACT</b></a>
+                </li>
+                <!-- nút search -->
+                <li>
+                    <i id="search_icon" style="color: #fff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute; background:black;"
+    
+ class="fa fa-search" aria-hidden="true"></i>
+                    <i id="close_search_form" style="color: #fff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute; display: none" class="fa fa-times" aria-hidden="true"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div>
+    <!-- form nhập search (ẩn) -->
+     <input type="text" class="form-control" id="search_form" style="display:none; position: absolute; margin-top: 57px; right: 0; width: 30%">
+</div>
+<!-- phần thanh cuộn tải trạng thái (cuộn trang tới đâu, chạy tới đó) -->
+ 
+</div>
+ </div>
+ 
+ 
+ 
+<div class="row" style ="background: #009dac; margin-top: 60px;">
+	<div class="container">
+		<div class="col-sm-6" style="margin-top: 50px;">
+			<h2 style="color: white" >JADON EVENT</h2> <br>
+			<p style="color: white">Comprehensive technology solution for organizing, managing and distributing event tickets.
+			<br>
+With JASON EVENT, you have all the tools you need to organize your event successfully!</p>
+    <form class="form-inline" action="#" style="margin-top: 35px;">
+    <div class="input-group">
+      <span class="input-group-addon" style="background: white;"><i class="glyphicon glyphicon-user"></i></span>
+      <input type="email" class="form-control" id="email" placeholder="Full name" name="email" >
+    </div>
+    <div class="input-group" >
+      <span class="input-group-addon" style="background: white;"> <i class="glyphicon glyphicon-phone"></i></span>
+      <input type="text" class="form-control" id="pwd" placeholder="Phone number"  name="pwd">
+    </div>
+    <br>
+    
+    <button  style="background: white !important; ;margin-top: 20px; 
+    
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px 120px;" class="btn btn-primary text-center " id="submit_1" onclick="myFun()"><a href ="form.html" style=" text-decoration: none; ">   REGISTER TO BECOME A PARTNER </a></button>
+
+  </form>
+
+  <p style="color: white;"> Price quotes or  <a href ="box.html" target="_blank" style="color: white;margin-top: 20px;"> try out events with JSON EVENT right now.</a></p>
+
+		</div>
+		<div class="col-sm-6">
+			<img src="http://static.bigtime.online.elitecdn.net/image/home/mac.png" width="100%;height:auto;">
+		</div>
+	</div>
+</div>
+<!-- NÚT BACK TO TOP, BOTTOM -->
+ 
+<button id="myBtn" class="myBtnq" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+<button id="myBtn2" style="bottom:7px !important" class="myBtnq" title="Go to bottom"><i class="fa fa-chevron-down"></i></button>
+
+<!------------------- Phần thanh share ở bên tay trái -------------------->
+ 
+<div class="icon-bar" id="share" class="share_icon">
+<a href="https://www.facebook.com/" class="fa fa-facebook fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="facebook" style=" background: #3B5998;"></a>
+<a href="https://www.twitter.com/" class="fa fa-twitter fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="twitter" style="background: #55ACEE;"></a>
+<a href="https://www.plus.google.com/" class="fa fa-google fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="G+"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="youtube"></a>
+</div>
+
+
+
+<div class="container second-portion">
+  <div class="row">
+        <!-- Boxes de Acoes -->
+      <div class="col-xs-12 col-sm-6 col-lg-4 ">
+      <div class="box">             
+        <div class="icon ">
+          <div class="image"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">MAIL & WEBSITE</h3>
+            <p>
+             <a href  ="#"  class="fa fa-envelope"></a> & <a href="#" style="color: black;"> tuaḅ900@gmail.com</a>
+              <br> 
+              <br>
+              <i class="fa fa-globe" aria-hidden="true"></i> &nbsp <a href="#" style="color: black;"> www.JADON EVENT.com</a>
+            </p>
+          
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>
+      
+        <div class="col-xs-12 col-sm-6 col-lg-4 ">
+      <div class="box">             
+        <div class="icon">
+          <div class="image"><i class="fa fa-mobile" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title"> PHONE</h3>
+              <p>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp (+91)-9624XXXXX
+              <br>
+              <br>
+              <i class="fa fa-mobile" aria-hidden="true"></i> &nbsp  (+91)-7567065254 
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>
+      
+        <div class="col-xs-12 col-sm-6 col-lg-4 ">
+      <div class="box">             
+        <div class="icon">
+          <div class="image"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+          <div class="info">
+            <h3 class="title">ADDRESS</h3>
+              <p>
+               <i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp <a href="#" style="color: black;">  FPT-
+University</a>
+            </p>
+          </div>
+        </div>
+        <div class="space"></div>
+      </div> 
+    </div>        
+    <!-- /Boxes de Acoes -->
+    
+    <!--My Portfolio  dont Copy this -->
+      
+  </div>
+</div>
+
+</div>
+  </div>
+
+ <!--  <div class="jumbotron " id="jumbotron1">
+<h2>We are social</h2>
+  
+</div> -->
+<div class="jumbotron">
+    <div class="row">
+        <div class="container animated fadeIn">
+
+  <div class="row" style="height: 130px;">
+   
+    <hr>
+    <div class="col-sm-12" id="parent">
+      <div class="col-sm-6">
+      <div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+    1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+    2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+    1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+    5e0!3m2!1svi!2sus!4v1501056274257" width="100%" height="300px;"
+    frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>    
+      </div>
+     
+
+      <div class="col-sm-6">
+       
+    
+    
+    <input type="text" name="username" class="input_x"  placeholder="Username" required />
+    <input type="text" name="email" class="input_y"  placeholder="E-mail" required="ban nhap" />
+    
+    <input type="password" name="password2" class="input_z" placeholder="phone number" required />
+    
+   
+  <textarea class="form-control" rows="5" placeholder="comment" id="comment" required></textarea>
+  <br>
+  <div class="submit">  <a href="mailto:webmaster@example.com" id="submit_2">  Sign me up</a> </div>
+   <!-- <input type="submit" class="pull-left"  name="signup_submit"  value="Sign me up" />
+      </div> -->
+    </div>
+    </div>
+  </div></div></div>
+  <br>
+  <br>
+  <br>
+  <br></div>
+
+<!-- footer -->
+
+<footer class="nb-footer" style="text-align: left !important;">
+<div class="container">
+<div class="row" >
+<div class="col-sm-12">
+<div class="about">
+
+    <div class="social-media">
+        <ul class="list-inline">
+            <li><a href="https://www.facebook.com/" title=""><i class="fa fa-facebook" style="color: #009dac;"></i></a></li>
+            <li><a href="https://www.twitter.com/" title=""><i class="fa fa-twitter" style="color: #009dac;"></i></a></li>
+            <li><a href="https://www.plus.google.com" title=""><i class="fa fa-google-plus" style="color: #009dac;"></i></a></li>
+            <li><a href="https://www.linkedin.com/" title=""><i class="fa fa-linkedin" style="color: #009dac;"></i></a></li>
+        </ul>
+    </div>
+</div>
+</div>
+
+
+
+
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+<div class="footer-info-single">
+  <img src="logo2.png" style="width: 70%">
+    <br>
+    <br>
+    <p><i class="fa fa-angle-double-right"></i> Address: 368 - Nguyen Trai.
+    <p><i class="fa fa-angle-double-right"></i> Phone: +84.1654.304.500</p>
+    <p><i class="fa fa-angle-double-right"></i> Website: www.jadon.com</p>
+    </p>
+</div>
+</div>
+
+
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+<div class="footer-info-single">
+    <h2 class="title" style="font-weight: 600 !important">Help Center</h2>
+    <ul class="list-unstyled">
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-6">
+<div class="footer-info-single">
+    <h2 class="title" style="font-weight: 600 !important">Customer information</h2>
+    <ul class="list-unstyled">
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+    </ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 col-xs-12">
+<div class="footer-info-single">
+    <h2 class="title" style="font-weight: 600 !important">Security & privacy</h2>
+    <ul class="list-unstyled">
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+        <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+    </ul>
+</div>
+</div>
+
+
+</div>
+</div>
+
+<section class="copyright">
+<div class="container">
+<div class="row">
+<div class="col-sm-6">
+<p style="font-size: 15px !important">Copyright © 2018. JADON Event Mangagerment Service</p>
+</div>
+<div class="col-sm-6"></div>
+</div>
+</div>
+</section>
+</footer>
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+  $("#submit_1").click(function(){
+    var input1 = $("#email").val();
+    var input2 = $("#pwd").val();
+    if(input1 == '' || input2 ==  '')
+    {
+      alert("Submit and False!");
+    }
+  });
+  $("#submit_2").click(function(e){
+      var x1 = $(".input_x").val();
+      var x2 = $("input_y").val();
+      var x3 = $("input_z").val();
+      var x4 = $("#comment").val();
+
+      if(x1 == '' || x2 == '' || x3 == '' || x4 == '' ){
+          e.preventDefault();
+          alert("Submit and False!");
+      }
+
+  });
+</script>

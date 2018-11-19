@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>HOUSING SERVICES</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link REL="SHORTCUT ICON" HREF="../icon_title_2.png">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="js.js"></script>
+      <style type="text/css">
+         * {
+         box-sizing: border-box;
+         -moz-box-sizing: border-box ;
+         -webkit-box-sizing: border-box;
+         }
+         .scroll2{
+         margin-top:10px ; height: 300px; border-radius: 7px; border: 0.6px solid black; overflow: scroll;
+         }
+         .scroll1{
+         text-decoration-style: none; list-style: none; padding: 0px;margin-top:10px ; height: 150px; border-radius: 7px; border: 0.6px solid black; overflow: scroll;
+         }
+         .col-md-6{
+         transition: all 1s;
+         -moz-transition: all 1s;
+         -webkit-transition: all 1s;
+         }
+         .img-responsive:hover{
+         -ms-transform: scale(1.3); /* IE 9 */
+         -webkit-transform: scale(1.3); /* Safari 3-8 */
+         transform: scale(1.3);   
+         transition: all 300ms;
+         }
+
+         #relative-img{
+            position: relative
+         }
+        
+
+         #img2{
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: .3s ease;
+            height: auto;
+            overflow: hidden;
+         }
+
+         #relative-img:hover #img2{
+            transform: scale(1);
+         
+         }
+
+         /* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  max-height: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+   /*ĐÂY LÀ PHẦN SHARE*/
+
+   .fa1 {
+      padding: 0px 0;
+      font-size: 30px;
+      width: 40px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+   }
+   .fa1:hover {
+      text-decoration: none;
+      color: white;
+      padding: 10px 34px;
+   }
+
+   .fa-facebook {
+      color: white;
+      z-index: 1111;
+   }
+
+   .fa-twitter {
+      color: white;
+   }
+
+   .fa-google {
+      background: #dd4b39;
+      color: white;
+   }
+
+   .fa-linkedin {
+      color: white;
+   }
+
+   .fa-youtube {
+      background: #bb0000;
+      color: white;
+   }
+
+   .icon-bar {
+      position: fixed;
+      top: 400px;
+      z-index: 878787;
+      left: 0px
+   }
+   .icon-bar:hover{
+      left: 0
+   }
+
+   .icon-bar a {
+      display: block;
+      padding:10px 1px;
+      margin: 0;
+      transition: all 0.3s ease;
+      font-size: 30px;
+   }
+
+   /*phần lên đầu trang*/
+
+.myBtnq {
+position: fixed !important;
+bottom: 57px !important;
+right: 3px !important; 
+z-index: 9122222222222229 !important;
+border: none !important;
+outline: none !important;
+background-color: black !important;
+color: white !important;
+cursor: pointer !important;
+padding: 13px 10px!important;
+border-radius: 0px !important;
+border: 1px solid grey !important;
+opacity: 0.5;
+}
+.myBtnq:hover {
+opacity: 1;
+}
+
+
+   /*Phần Footer*/
+
+footer{background-color: #35a8b8;
+     margin-top: 10px}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #009dac;
+}
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #009dac; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: white !important;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: black;
+}
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #009dac;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #009dac; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+/* hieu ung anh */
+.relative{
+      display: block;
+      position: relative
+   }
+
+   #aa{
+      
+      top: 0;
+      left: 0;
+   }
+
+   #bb{
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(0);
+      transition: .3s ease;
+   }
+
+   .relative:hover #bb{
+      transform: scale(1);
+
+   }
+/*Phần header*/
+
+  #search_icon:hover{
+    font-size: 28px !important;
+    cursor: pointer;
+  }
+  #close_search_form{
+    cursor: pointer;
+    font-size: 28px !important;
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    z-index: 1122;
+    width: 100%;
+  }
+  .logo {
+    color: #009dac;
+    font-size: 200px;
+  }
+  .container-fluid {
+    padding: 60px;
+  }
+
+  .logo-small {
+    color: #009dac;
+    font-size: 50px;
+  }
+  .icon-bar1{color: white}
+
+  .navbar {
+    margin-bottom: 0;
+    background-color: #042b2a;
+    opacity: 0.9;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: black !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    color: white !important;
+  }
+  .navbar-default .navbar-toggle .icon-bar1 
+  {
+    background-color: white;
+  }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+    color: red;
+  }
+      </style>
+   </head>
+   <body>
+
+      <!------------------- Phần thanh share ở bên tay trái -------------------->
+
+   <div class="icon-bar" id="share" class="share_icon">
+      <a href="https://www.facebook.com/" class="fa fa-facebook fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="facebook" style=" background: #3B5998;"></a>
+      <a href="https://www.twitter.com/" class="fa fa-twitter fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="twitter" style="background: #55ACEE;"></a>
+      <a href="https://www.plus.google.com/" class="fa fa-google fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="G+"></a>
+      <a href="https://www.youtube.com/" class="fa fa-youtube fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="youtube"></a>
+   </div>
+      <header id="header" class="container-fluid">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                     <div class="numbertext">1 / 3</div>
+                     <img src="ld6.jpg" style="width:100%; height: 500px">
+                     <div class="text"></div>
+                  </div>
+
+                  <div class="mySlides fade">
+                     <div class="numbertext">2 / 3</div>
+                     <img src="ld8.jpg" style="width:100%; height: 500px">
+                     <div class="text"></div>
+                  </div>
+
+                  <div class="mySlides fade">
+                     <div class="numbertext">3 / 3</div>
+                     <img src="ld12.jpg" style="width:100%;height: 500px">
+                     <div class="text"></div>
+                  </div>
+
+               </div>
+               <br>
+
+               <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+               </div>
+      </header>
+      <!-- ------------- NAV BAR (thanh header) ----------------- -->
+
+      <div class="header" >
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <a class="navbar-brand" href="../E_Project.html"><img src="logo2.png" style="height:200%; margin-top: -10px;">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="../About_Us/do_an.html"><span class="glyphicons glyphicons-binoculars"></span><b>ABOUT</b></a>
+                </li>
+                <li><a href="service-event.html"><b>SERVICES</b></a>
+                </li>
+                <li><a href="../Contac_Us/tu.html"><b>CONTACT</b></a>
+                </li>
+                <!-- nút search -->
+                <li>
+                  <i id="search_icon" style="color: #fff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute;" class="fa fa-search" aria-hidden="true"></i>
+                  <i id="close_search_form" style="color: #fff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute; display: none" class="fa fa-times" aria-hidden="true"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div>
+          <!-- form nhập search (ẩn) -->
+          <input type="text" class="form-control" id="search_form" style="display:none; position: absolute; margin-top: 57px; right: 0; width: 30%">
+        </div>
+      </div>
+        <!-- phần thanh cuộn tải trạng thái (cuộn trang tới đâu, chạy tới đó) -->
+      <!-- /header -->
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <h4><i><b>We are always ready to serve you</b></i></h4>
+               <div class="row">
+                  <div class="col-md-12">
+                     <img src="cc10.jpg" class="img-responsive" style="width: 450px;height: 350px;float: left;padding: 10px">
+                     <p style="padding:7px">
+                        Please share with us any location that fits your event. With the experience, JADON always ready to serve and advise a perfect service package from food, decoration .. as all your requirements!
+                     </p>
+                        <h5><i><b>JASON</b></i></h5>
+                        <p> You can have a party at home, a party at the company, or a party like you are looking for a party outside of JADON. Just pick up the phone and call us, the most hearty and formal party will be perfectly completed on your wishes.</p>
+                        <p>
+                        Be the soul blower for your wedding day, we will help you perfect each stroke for that masterpiece forever not fade.</p>
+                        <p>
+                           You do not have to worry about preparing, cleaning, decorating, looking for restaurant to party ... JADON will bring all this convenience to customers. Each theme, the space of the party such as corporate parties, outdoor parties or banquets at your home are all studied by us, decorated design; Elegant but very warm, friendly. Especially, customers will be consulted in detail about food menu, price ... to suit their finances and preferences
+                        </p>
+                     </div>
+               </div>
+
+               </h4>
+               <h3 style="font-weight: 500 ">WELCOME TO JASON</h3>
+               <p>
+                  A perfect party can not lack the contribution of delicious food, quality from raw materials to processing. The menu of Asian-European style restaurants, whether you like the food of the homeland of Vietnam or the passion of the Western style ... is also satisfied by JADON. With professional and thoughtful style, JADON will definitely satisfy and satisfy all your requirements including the most fastidious customers!
+               </p>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="relative">
+                        <img src="ld17.jpg" id="aa" width="100%" height="240px">
+                        <img src="ld21.jpg" id="bb" width="100%" height="auto">
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="relative">
+                        <img src="ld14.jpg" id="aa" width="100%" height="240px">
+                        <img src="ld15.jpg" id="bb" width="100%" height="240px">
+                     </div>
+                  </div>
+               </div>
+              
+               <p><b>Also when <span style="color: orange">wedding organization</span> At JASON you will be offered a lot of services, package events according to CU DUE - CHEAP such as: luxurious decoration hall on request, stage, sound professional performance, angel, khanh professional MC, filming, photography ...</b></p>
+               <br><br>
+               <div class="row">
+                  <div class="col-md-12">
+                     <h3>Menu of the wedding party</h3>
+                     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                           <li data-target="#myCarousel" data-slide-to="3"></li>
+                           <li data-target="#myCarousel" data-slide-to="0" ></li>
+                           <li data-target="#myCarousel" data-slide-to="1" ></li>
+                           <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+                           <li data-target="#myCarousel" data-slide-to="4"></li>
+
+                        </ol>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                           <div class="item active">
+                              <img src="ld13.jpg" alt="Los Angeles">
+                           </div>
+                           <div class="item">
+                              <img src="ld16.png" alt="Chicago" width="100%">
+                           </div>
+
+                           <div class="item">
+                              <img src="ld18.jpg" alt="New York" width="100%">
+                           </div>
+                           <div class="item">
+                              <img src="ld19.jpg" alt="New York" width="100%">
+                           </div>
+                           <div class="item">
+                              <img src="ld20.jpg" alt="New York">
+                           </div>
+                        </div>
+                        <!-- Left and right controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                           <span class="glyphicon glyphicon-chevron-left"></span>
+                           <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                           <span class="glyphicon glyphicon-chevron-right"></span>
+                           <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+
+                <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="service-event.html" style="background: black">LIST SERVICE</a></li>
+                  <li><a href="dich-vu-tiec-cuoi.html" style="color: black">WEDDING SERVICE</a></li>
+                  <li><a href="event.html" style="color: black">EVENT ORGANIZATION</a></li>
+                  <li><a href="conference-service.html" style="color: black">CONFERENCE SERVICES</a></li>
+                  <li><a href="tiec-luu-dong.html" style="color: white; background-color: #149b76;">HOUSING SERVICES</a></li>
+                  <!--<li><a href="tiec-luu-dong.html">KHAI TRƯƠNG - KHÁNH THÀNH</a></li>
+                     <li><a href="tiec-luu-dong.html">LỄ RA MẮT SẢN PHẨM MỚI</a></li>
+                     <li><a href="tiec-luu-dong.html">LỄ KỶ NIỆM</a></li>-->
+               </ul>
+
+               <div class="panel panel-body panel-default">
+                  <div class="panel-heading" style="background: black;color: white">NEWS</div>
+                  <div class="panel-body">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <img src="u23-vit-nam-vit-tip-lch-s_1gl2c220jfmxw1lg566uoh3lof-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br> 
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/khuyen-mai-mung-tuyen-u23-viet-nam-chien-thang.html" style="color: black">PROMOTE U23 VIETNAM WINNER</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="13-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br>   
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/tiec-tat-nien.html" style="color: black">YEAR-END PARTY</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="7-1-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br>  
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/giang-sinh-ap.html" style="color: black">CHRISTMAS IN JASON</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="26731371_1992184654381756_7993087365985946510_n-457x257.png" class="img-responsive" style="width:100%" alt="Image"><br>   
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/trang-palace-noi-to-chuc-su-kien-chuyen-nghiep-uy-tin-cho-cac-cong-ty-tai-ha-noi.html" style="color: black">EVENT ORGANIZATION OF THE GROUP</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="panel panel-body panel-default">
+                  <div class="panel-heading" style="background: black;color: white">SIGN UP</div>
+                  <div class="panel-body">
+                     <p>Sign up for the latest JASON event newsletters</p>
+                     <form>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                           <input type="text" class="form-control" id="username" placeholder="Vui lòng nhập đầy đủ họ tên" required>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                           <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                           <input type="text" class="form-control" id="phone_number" placeholder="Số điện thoại" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--REVIEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW-->
+         <div class="row">
+            <div class="col-sm-12">
+               <h5>QUESTION ABOUT THE PRODUCT</h5>
+               <ul id="append_question" class="scroll1">
+                  <li>
+                  </li>
+               </ul>
+               <input type="text" class="form-control" name="input_question">
+               <br>
+               <button type="submit" id="respond" class="btn btn-primary">Question</button>
+               <hr>
+               <div class="col-md-6">
+                  <h4 style="text-align: center;">
+                  Average rating</h6>
+                  <p style="color: red; font-weight: 600; font-size: 50px; text-align: center;" class="total-review-point">
+                     0/5
+                  </p>
+                  <!--1-->
+                  <span class="rating-box">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  </span>
+                  <p style="text-align: center" class="count_comment">
+                     (There are 0 reviews)
+                  </p>
+               </div>
+               <div class="col-md-6">
+                  <div class="side">
+                     <div>5 <span class="fa fa-star checked"></span></div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container" id="bar-5">
+                        <div class="bar-5" id="green"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star5">
+                     <div>&nbsp&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>4 <span class="fa fa-star checked"></span></div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-4" id="blue"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star4">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>3 <span class="fa fa-star checked"></span></div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-3" id="light_blue"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star3">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>2 <span class="fa fa-star checked"></span></div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-2"  id="oranges"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star2">
+                     <div>&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>1 <span class="fa fa-star checked"></span></div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-1" id="red"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star1">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <hr>
+               <div class="col-md-12">
+                  <div class="panel panel-default panel-body">
+                     <h4><b>Share a comment about your service</b></h4>
+                     <button class="btn btn-primary" id="write_comment">REVIEW</button>      
+                  </div>
+               </div>
+               <!--End Rating-->
+               <!--List raing-->
+               <div class="row scroll2">
+                  <div class="col-12" >
+                     <p>Check out the review</p>
+                     <p id="append"></p>
+                  </div>
+               </div>
+               <!--End List-->
+               <div id="popup" >
+                  <h5>Send your comment</h5>
+                  <p style="margin: 0px;">What's your name, huh ?</p>
+                  <input type="text" name="user_name" class="form-control" id="user_name">
+                  <form>
+                     <p style="float: left;">1. Review of this product.</p>
+                     <section class='rating-widget'>
+                        <!-- Rating Stars Box -->
+                        <div class='rating-stars text-center'>
+                           <ul id='stars'>
+                              <li class='star' title='Poor' data-value='1'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Fair' data-value='2'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Good' data-value='3'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Excellent' data-value='4'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='WOW!!!' data-value='5'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!-- <div class="clear"></div>
+                        <div class='success-box'>
+                          <div class='clearfix'></div>
+                          <div class='text-message'></div>
+                          <div class='clearfix'></div>
+                        </div> -->
+                     <div class="form-group">
+                        <br>
+                        <br>
+                        <p>2.The title of the commen</p>
+                        <input type="text" name="title_comment" class="form-control" id ="title_comment">
+                     </div>
+                     3.Write your review below:
+                     <textarea style="width: 70%;" id="textarea"></textarea>
+                     <br>
+                     <input type="submit" name="action_respont" id="action_respont" >
+                  </form>
+                  <button id="hide">x</button>
+               </div>
+               <!--END REVIEW-->
+            </div>
+         </div>
+      </div>
+      
+         <!------------------ (footer ) -------------------->
+
+   <footer class="nb-footer" id="footer">
+      <div class="container">
+         <div class="row">
+            <div class="col-sm-12">
+               <div class="about">
+
+                  <div class="social-media">
+                     <ul class="list-inline">
+                        <li><a href="https://www.facebook.com/" title=""><i class="fa fa-facebook" style="color: #009dac;"></i></a></li>
+                        <li><a href="https://www.twitter.com/" title=""><i class="fa fa-twitter" style="color: #009dac;"></i></a></li>
+                        <li><a href="https://www.plus.google.com" title=""><i class="fa fa-google-plus" style="color: #009dac;"></i></a></li>
+                        <li><a href="https://www.linkedin.com/" title=""><i class="fa fa-linkedin" style="color: #009dac;"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+
+
+
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="footer-info-single">
+                  <img src="logo2.png" style="width: 70%">
+                  <br>
+                  <br>
+                  <p><i class="fa fa-angle-double-right"></i> Address: 368 Nguyen Trai / Nam Tu Liem.
+                     <p><i class="fa fa-angle-double-right"></i> Phone: +84.1654.304.500</p>
+                     <p><i class="fa fa-angle-double-right"></i> Website: www.myeventstreet.co.uk</p>
+                  </p>
+               </div>
+            </div>
+
+
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="footer-info-single">
+                  <h2 class="title" style="font-weight: 600 !important">Help Center</h2>
+                  <ul class="list-unstyled">
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="footer-info-single">
+                  <h2 class="title" style="font-weight: 600 !important">Customer information</h2>
+                  <ul class="list-unstyled">
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+               <div class="footer-info-single">
+                  <h2 class="title" style="font-weight: 600 !important">Security & privacy</h2>
+                  <ul class="list-unstyled">
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+                     <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+                  </ul>
+               </div>
+            </div>
+
+
+         </div>
+      </div>
+
+      <section class="copyright">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-6">
+                  <p>Copyright © 2018. JADON Event Mangagerment Service</p>
+               </div>
+               <div class="col-sm-6"></div>
+            </div>
+         </div>
+      </section>
+   </footer>
+         <!-- NÚT BACK TO TOP, BOTTOM -->
+
+     <button id="myBtn" class="myBtnq" title="Go to top"><a href="#header"><i class="fa fa-chevron-up"></i></a></button>
+     <button id="myBtn2" style="bottom:7px !important" class="myBtnq" title="Go to bottom"><a href="#footer"><i class="fa fa-chevron-down"></i></a></button>
+      <script type="text/javascript">
+
+         var slideIndex = 0;
+         showSlides();
+
+         function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+               for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+               }
+               slides[slideIndex-1].style.display = "block";  
+               dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+ }
+
+</script>
+   </body>
+</html>

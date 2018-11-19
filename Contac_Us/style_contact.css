@@ -1,0 +1,426 @@
+
+ 
+.container{
+  padding: 0px;
+}
+
+.h1 small {
+font-size: 10px;
+}
+
+html {
+  font-size: 20px;
+}
+body {
+    padding: 0px;
+  text-align: center;
+  width: 100%;
+
+}
+
+/* Wrapper */
+
+
+
+    
+
+}
+
+.contactus-newlatte p {
+    padding: 15px 320px 70px;
+}
+
+    #map{
+      margin-bottom:30px;
+
+    }
+
+   
+.header-title
+        {
+          text-align: center;
+          color:#00bfff;
+        }
+
+        #tip 
+        {
+            display:none;  
+        }
+
+        .fadeIn
+        {
+          animation-duration: 3s;
+        }
+
+        .form-control
+        {
+          border-radius:0px;
+          border:1px solid #EDEDED;
+        }
+
+        .form-control:focus
+        {
+          border:1px solid #00bfff;
+        }
+
+        .textarea-contact
+        {
+          resize:none; 
+        }
+
+        .btn-send
+        {
+          border-radius: 0px;
+          border:1px solid #00bfff;
+          background:#00bfff;
+          color:#fff; 
+          margin-right: 450px;
+        }
+
+        .btn-send:hover
+        {
+          border:1px solid #00bfff;
+          background:#fff;
+          color:white;
+          transition:background 0.5s;   
+        }
+
+        .second-portion
+        {
+          margin-top:50px; 
+        }
+
+            @import "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css";
+    @import "http://fonts.googleapis.com/css?family=Roboto:400,500";
+
+    .box > .icon { text-align: center; position: relative; }
+    .box > .icon > .image { position: relative; z-index: 2; margin: auto; width: 88px; height: 88px; border: 8px solid white; line-height: 88px; border-radius: 50%; background: #009dac; vertical-align: middle; }
+    .box > .icon:hover > .image { background: #333; }
+    .box > .icon > .image > i { font-size: 36px !important; color: #fff !important; }
+    .box > .icon:hover > .image > i { color: white !important; }
+    .box > .icon > .info { margin-top: -24px; background: rgba(0, 0, 0, 0.04); border: 1px solid #e0e0e0; padding: 15px 0 10px 0; min-height:163px;}
+    .box > .icon:hover > .info { background: rgba(0, 0, 0, 0.04); border-color: #e0e0e0; color: white; }
+    .box > .icon > .info > h3.title { font-family: "Robot",sans-serif !important; font-size: 16px; color: #222; font-weight: 700; }
+    .box > .icon > .info > p { font-family: "Robot",sans-serif !important; font-size: 13px; color: #666; line-height: 1.5em; margin: 20px;}
+    .box > .icon:hover > .info > h3.title, .box > .icon:hover > .info > p, .box > .icon:hover > .info > .more > a { color: #222; }
+    .box > .icon > .info > .more a { font-family: "Robot",sans-serif !important; font-size: 12px; color: #222; line-height: 12px; text-transform: uppercase; text-decoration: none; }
+    .box > .icon:hover > .info > .more > a { color: #fff; padding: 6px 8px; background-color: #63B76C; }
+    .box .space { height: 30px; }
+
+    @media only screen and (max-width: 768px)
+    {
+      .contact-form
+      {
+        margin-top:25px; 
+      }
+
+      .btn-send
+      {
+        width: 100%;
+        padding:10px; 
+      }
+
+      .second-portion
+      {
+        margin-top:25px; 
+      }
+    }
+
+    #login-box {
+  position: relative;
+  margin: 5% auto;
+  width: 800px;
+  height: 400px;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+
+
+h1 {
+  margin: 0 0 20px 0;
+  font-weight: 300;
+  font-size: 28px;
+}
+
+input[type="text"],
+input[type="password"] {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding: 4px;
+  width: 420px;
+  height: 32px;
+  border: none;
+  border-bottom: 1px solid #AAA;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 2px solid #16a085;
+  color: #16a085;
+  transition: 0.2s ease;
+}
+
+input[type="submit"] {
+  margin-top: 28px;
+  width: 120px;
+  height: 32px;
+  background: white;
+  border: none;
+  border-radius: 2px;
+  color: #009dac;;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.1s ease;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  opacity: 0.8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+
+input[type="submit"]:active {
+  opacity: 1;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+  transition: 0.1s ease;
+}
+/*footer*/
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #009dac; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: white !important;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: black;
+}
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #009dac;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #009dac; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+
+
+/*ĐÂY LÀ PHẦN SHARE*/
+ 
+.fa1 {
+padding: 0px 0;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa1:hover {
+text-decoration: none;
+color: white;
+padding: 10px 34px;
+}
+ 
+.fa-facebook {
+color: white;
+z-index: 1111;
+}
+ 
+.fa-twitter {
+color: white;
+}
+ 
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+ 
+.fa-linkedin {
+color: white;
+}
+ 
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+ 
+.icon-bar {
+position: fixed;
+top: 250px;
+z-index: 878787;
+left: 0px
+}
+.icon-bar:hover{
+left: 0
+}
+ 
+.icon-bar a {
+display: block;
+padding:10px 1px;
+margin: 0;
+transition: all 0.3s ease;
+font-size: 30px;
+}
+ 
+ 
+ 
+ 
+ 
+/*phần lên đầu trang*/
+ 
+.myBtnq {
+position: fixed !important;
+bottom: 57px !important;
+right: 3px !important;
+z-index: 9122222222222229 !important;
+border: none !important;
+outline: none !important;
+background-color: black !important;
+color: white !important;
+cursor: pointer !important;
+padding: 13px 10px!important;
+border-radius: 0px !important;
+border: 1px solid grey !important;
+opacity: 0.5;
+}
+.myBtnq:hover {
+opacity: 1;
+}
+ 
+ 
+ 
+ 
+/*Phần header*/
+ 
+#search_icon:hover{
+font-size: 28px !important;
+cursor: pointer;
+}
+#close_search_form{
+cursor: pointer;
+font-size: 28px !important;
+}
+ 
+.header {
+position: fixed;
+top: 0;
+z-index: 1122;
+width: 100%;
+}
+.logo {
+  color: #009dac;
+  font-size: 200px;
+}
+.container-fluid {
+  padding: 60px;
+}
+ 
+.logo-small {
+  color: #009dac;
+  font-size: 50px;
+}
+.icon-bar1{color: white}
+ 
+.navbar {
+  margin-bottom: 0;
+  background-color: #042b2a;
+  opacity: 0.9;
+  z-index: 9999;
+  border: 0;
+  font-size: 12px !important;
+  letter-spacing: 4px;
+  border-radius: 0;
+  font-family: Montserrat, sans-serif;
+}
+.navbar li a, .navbar .navbar-brand {
+  color: #fff !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+  color: black !important;
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle {
+  color: white !important;
+}
+.navbar-default .navbar-toggle .icon-bar1
+{
+background-color: white;
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+background-color: #fff;
+color: red;
+}
+.navbar-default {
+    background-color: #009dac;;
+    border-color: #e7e7e7;
+}
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  

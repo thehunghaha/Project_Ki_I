@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>SERVICE</title>
+      <meta charset="UTF-8">
+      <title>E_Project</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    <link REL="SHORTCUT ICON" HREF="../icon_title_2.png">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="js.js"></script>
+      <style >
+         #mySidenav a {
+         position: fixed;
+         right: -50px;
+         margin-top: 100px; 
+         display: block;
+         transition: 0.3s;
+         padding: 15px;
+         width: 100px;
+         text-decoration: none;
+         font-size: 20px;
+         color: white;
+         border-radius: 0 5px 5px 0;
+         }
+         #mySidenav a:hover {
+         right: 0;
+         }
+         /* Style all font awesome icons */
+         fa{
+         padding: 20px;
+         font-size: 30px;
+         width: 50px;
+         text-align: center;
+         text-decoration: none;
+         }*/
+         /* Facebook */
+         .fa-facebook {
+         top: 20px; 
+         }
+         .fa-youtube {
+         top: 80px;
+         }
+         .fa-instagram {
+         top: 140px;
+         } 
+         .col-md-3 .col-md-6{
+         transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -webkit-transition: all 0.2s;
+         }
+         .col-md-3 .col-md-6 img:hover{
+         -ms-transform: scale(1.5); /* IE 9 */
+         -webkit-transform: scale(1.5); /* Safari 3-8 */
+         transform: scale(1.5);  
+         transition: all 300ms;
+         -ms-transition: all 300ms;
+         -webkit-transition: all 300ms;
+
+         }
+         .col-md-3{
+         transition: all 0.2s;
+         -moz-transition: all 0.2s;
+         -webkit-transition: all 0.2s;
+         }
+         .col-md-3 img:hover{
+         -ms-transform: scale(1.2, 1.4); /* IE 9 */
+         -webkit-transform: scale(1.2, 1.4); /* Safari 3-8 */
+         transform: scale(1.2 , 1.4);  
+         transition: all 300ms;
+         } 
+         .fa {
+         font-size: 25px;
+         }
+         .checked {
+         color: orange;
+         }
+         /* Three column layout */
+         .side {
+         float: left;
+         width: 15%;
+         margin-top:10px;
+         }
+         .middle {
+         margin-top:10px;
+         float: left;
+         width: 70%;
+         }
+         /* Place text to the right */
+         .right {
+         text-align: right;
+         }
+         /* Clear floats after the columns */
+         .row:after {
+         content: "";
+         display: table;
+         clear: both;
+         }
+         /* The bar container */
+         .bar-container {
+         width: 100%;
+         background-color: #f1f1f1;
+         text-align: center;
+         color: white;
+         }
+         /* Individual bars */
+         .bar-5 { height: 18px;  }
+         .bar-4 { height: 18px; }
+         .bar-3 { height: 18px; }
+         .bar-2 { height: 18px; }
+         .bar-1 { height: 18px; }
+         /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+         @media (max-width: 400px) {
+         .side, .middle {
+         width: 100%;
+         }
+         .right {
+         display: none;
+         }
+         }
+         #back-top {
+         position: fixed;
+         right: 0px;
+         bottom: 0px;
+         }
+         #back-top a img{
+         width: 100px;
+         height: 100px;
+         }
+         tr{
+         text-align: center
+         }
+
+         /* Container needed to position the overlay. Adjust the width as needed */
+         .container-overlay {
+          position: relative;
+          width: 100%;
+       }
+
+       /* Make the image to responsive */
+       .image {
+          width: 100%;
+          height: auto;
+       }
+
+       /* The overlay effect (full height and width) - lays on top of the container and over the image */
+       .overlay {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background-color: rgba(0,0,0,0.4);
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+          -webkit-transform:scale(0);
+          transition: .3s ease;
+       }
+
+       /* When you mouse over the container, the overlay text will "zoom" in display */
+       .container-overlay:hover .overlay {
+          transform: scale(1)
+       }
+
+       /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+       .text {
+          color: white;
+          font-size: 20px;
+          position: absolute;
+          bottom: 10px;
+          left: 100px
+            
+          
+       }
+
+       /* xoay trang*/
+
+       @-webkit-keyframes rotate360 {
+         100% { -webkit-transform: rotate(360deg); }
+      }
+
+      @-moz-keyframes rotate360 {
+         100% { -moz-transform: rotate(360deg); }
+      }
+
+      @-ms-keyframes rotate360 {
+         100% { -ms-transform: rotate(360deg); }
+      }
+
+      @-o-keyframes rotate360 {
+         100% { -o-transform: rotate(360deg); }
+      }
+
+      @keyframes rotate360 {
+         100% { transform: rotate(360deg); }
+      }
+
+      .rotate360 {
+         -webkit-animation: rotate360 2s;
+         -moz-animation: rotate360 2s;
+         -ms-animation: rotate360 2s;
+         -o-animation: rotate360 2s;
+         animation: rotate360 2s;
+      }
+
+      .triangle-down {
+
+        border-left: 1348px solid transparent;
+        border-right: 0px solid transparent;
+        border-top: 90px solid black;
+      }
+
+      /*Phần header*/
+
+      #search_icon:hover{
+         font-size: 28px !important;
+         cursor: pointer;
+      }
+      #close_search_form{
+         cursor: pointer;
+         font-size: 28px !important;
+      }
+
+      .header {
+         position: fixed;
+         top: 0;
+         z-index: 1122;
+         width: 100%;
+      }
+      .logo {
+       color: #009dac;
+       font-size: 200px;
+    }
+    .container-fluid {
+       padding: 60px;
+    }
+
+    .logo-small {
+       color: #009dac;
+       font-size: 50px;
+    }
+    .icon-bar1{color: white}
+
+    .navbar {
+       margin-bottom: 0;
+       background-color: #042b2a;
+       opacity: 0.9;
+       z-index: 9999;
+       border: 0;
+       font-size: 12px !important;
+       letter-spacing: 4px;
+       border-radius: 0;
+       font-family: Montserrat;
+    }
+    .navbar li a, .navbar .navbar-brand {
+       color: #fff !important;
+    }
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+       color: black !important;
+       background-color: #fff !important;
+    }
+    .navbar-default .navbar-toggle {
+       color: white !important;
+    }
+    .navbar-default .navbar-toggle .icon-bar1 
+    {
+      background-color: white;
+   }
+   .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+      background-color: #fff;
+      color: red;
+   }
+
+
+/*ĐÂY LÀ PHẦN SHARE*/
+
+.fa1 {
+padding: 0px 0;
+font-size: 30px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+}
+.fa1:hover {
+text-decoration: none;
+color: white;
+padding: 10px 34px;
+}
+
+.fa-facebook {
+color: white;
+z-index: 1111;
+}
+
+.fa-twitter {
+color: white;
+}
+
+.fa-google {
+background: #dd4b39;
+color: white;
+}
+
+.fa-linkedin {
+color: white;
+}
+
+.fa-youtube {
+background: #bb0000;
+color: white;
+}
+
+.icon-bar {
+position: fixed;
+top: 350px;
+z-index: 878787;
+left: 0px
+}
+.icon-bar:hover{
+left: 0
+}
+
+.icon-bar a {
+display: block;
+padding:10px 1px;
+margin: 0;
+transition: all 0.3s ease;
+font-size: 30px;
+}
+
+/*Phần Footer*/
+
+footer{background-color: #35a8b8;
+     margin-top: 10px}
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #009dac;
+}
+footer.nb-footer {
+background: #222;
+border-top: 4px solid #009dac; }
+footer.nb-footer .about {
+margin: 0 auto;
+margin-top: 40px;
+max-width: 1170px;
+text-align: center; }
+footer.nb-footer .about p {
+font-size: 13px;
+color: #999;
+margin-top: 30px; }
+footer.nb-footer .about .social-media {
+margin-top: 15px; }
+footer.nb-footer .about .social-media ul li a {
+display: inline-block;
+width: 45px;
+height: 45px;
+line-height: 45px;
+border-radius: 50%;
+font-size: 16px;
+color: white !important;
+border: 1px solid rgba(255, 255, 255, 0.3); }
+footer.nb-footer .about .social-media ul li a:hover {
+background: black;
+}
+footer.nb-footer .footer-info-single {
+margin-top: 30px; }
+footer.nb-footer .footer-info-single .title {
+color: #aaa;
+text-transform: uppercase;
+font-size: 16px;
+border-left: 4px solid #009dac;
+padding-left: 5px; }
+footer.nb-footer .footer-info-single ul li a {
+display: block;
+color: #aaa;
+padding: 2px 0; }
+footer.nb-footer .footer-info-single ul li a:hover {
+color: #009dac; }
+footer.nb-footer .footer-info-single p {
+font-size: 13px;
+line-height: 20px;
+color: #aaa; }
+footer.nb-footer .copyright {
+margin-top: 15px;
+background: #111;
+padding: 7px 0;
+color: #999; }
+footer.nb-footer .copyright p {
+margin: 0;
+padding: 0; }
+
+/*phần lên đầu trang*/
+
+.myBtnq {
+position: fixed !important;
+bottom: 57px !important;
+right: 3px !important; 
+z-index: 9122222222222229 !important;
+border: none !important;
+outline: none !important;
+background-color: black !important;
+color: white !important;
+cursor: pointer !important;
+padding: 13px 10px!important;
+border-radius: 0px !important;
+border: 1px solid grey !important;
+opacity: 0.5;
+}
+.myBtnq:hover {
+opacity: 1;
+}
+</style>
+   </head>
+   <body style="font-family: Montserrat !important !important !important; color:#1d6166;">
+
+      <!------------------- Phần thanh share ở bên tay trái -------------------->
+
+      <div class="icon-bar" id="share" class="share_icon">
+         <a href="https://www.facebook.com/" class="fa fa-facebook fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="facebook" style=" background: #3B5998;"></a>
+         <a href="https://www.twitter.com/" class="fa fa-twitter fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="twitter" style="background: #55ACEE;"></a>
+         <a href="https://www.plus.google.com/" class="fa fa-google fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="G+"></a>
+         <a href="https://www.youtube.com/" class="fa fa-youtube fa1" class="share_icon" data-toggle="tooltip" data-placement="right" title="youtube"></a>
+      </div>
+
+      <!-- ------------- NAV BAR (thanh header) ----------------- -->
+
+      <div class="header">
+         <nav class="navbar navbar-default navbar-fixed-top">
+           <div class="container">
+             <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+               </button>
+               <a class="navbar-brand" href="../E_Project.html"><img src="logo2.png" style="height:200%; margin-top: -10px;">
+               </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav navbar-right">
+                 <li><a href="../About_Us/do_an.html"><span class="glyphicons glyphicons-binoculars"></span><b>ABOUT</b></a>
+                 </li>
+                 <li><a href="service-event.html"><b>SERVICES</b></a>
+                 </li>
+                 <li><a href="../Contac_Us/tu.html"><b>CONTACT</b></a>
+                 </li>
+                 <!-- nút search -->
+                 <li>
+                   <i id="search_icon" style="color: #fff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute;" class="fa fa-search" aria-hidden="true"></i>
+                   <i id="close_search_form" style="color: #ffile:///C:/Users/Admin/Desktop/eprj/E_Project.htmlff; font-size:22px; line-height: 50px; margin-left: 10px; position: absolute; display: none" class="fa fa-times" aria-hidden="true"></i>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </nav>
+    <div>
+     <!-- form nhập search (ẩn) -->
+     <input type="text" class="form-control" id="search_form" style="display:none; position: absolute; margin-top: 57px; right: 0; width: 30%">
+  </div>
+  <!-- phần thanh cuộn tải trạng thái (cuộn trang tới đâu, chạy tới đó) -->
+
+</div>
+
+      <header id="header-lp" class="container-fluid" style="padding: 0">
+         <div class="row">
+            <div class="col-md-12">
+               <div style="height:290px; background-color: black" class="container-fluid">
+                  <br>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+
+                  <h2 style="text-align:center; font-weight: 1000 !important; color: #fff">SERVICE</h2>
+
+                  <hr style="width:40%; margin-left: 30%">
+
+                  <h3 style="text-align:center; color: #fff">Event Design Company JADON</h3>
+               </div>
+
+               <div class="triangle-down"></div>
+            </div>
+            </div>
+         </div>
+      <!--sidebar back-top-->
+         
+         <!-- <div id="back-top">
+            <a href="#header-lp"><img src="128453-simple-red-square-icon-arrows-cut-arrow-up.png"></a>
+         </div>-->
+
+         <!-- NÚT BACK TO TOP, BOTTOM -->
+
+         <button id="myBtn" class="myBtnq" title="Go to top"><a href="#header-lp"><i class="fa fa-chevron-up"></i></a></button>
+         <button id="myBtn2" style="bottom:7px !important" class="myBtnq" title="Go to bottom"><a href="#footer"><i class="fa fa-chevron-down"></i></a></button>
+      </header>
+      <!-- /header -->
+      <div class="container">
+         <div class="row">
+            <div class="col-md-2">
+               <ul class="nav nav-pills nav-stacked">
+                  <li class="active"><a href="service-event.html" style="background: black">LIST SERVICE</a></li>
+                  
+
+                  <li><a href="dich-vu-tiec-cuoi.html" style="color: black">- WEDDING</a></li>
+                  <li><a href="conference-service.html" style="color: black">- CONFERENCE</a></li>
+                  <li><a href="tiec-luu-dong.html" style="color: black">- MUSIC PARTY</a></li>
+                  <!--<li><a href="tiec-luu-dong.html">KHAI TRƯƠNG - KHÁNH THÀNH</a></li>
+                     <li><a href="tiec-luu-dong.html">LỄ RA MẮT SẢN PHẨM MỚI</a></li>
+                     <li><a href="tiec-luu-dong.html">LỄ KỶ NIỆM</a></li>-->
+               </ul>
+            </div>
+            <div class="col-md-7">
+               <div class="panel panel-body panel-danger">
+                  <h3 class="text-center">Convention Center - Event - Leading wedding in Hanoi</h3>
+               </div>
+               <h4 style="font-weight: 600;">Are you looking for a professional event company and prestige?</h4>
+               <p>
+                 <b> Professional event company and prestige? An unbelievable fact is that 8 out of 10 people who were asked about <i style = "color: red"> events </i> were unhappy about the results after the show ended. Each person has a different difficulty, different mistakes when organizing the event itself, but they always have a headache with the following questions: </b>
+               </p>
+               <li>How to get a perfect plan?</li>
+               <li>Does the idea fit the organizational goals?</li>
+               <li>How to hire services?</li>
+               <li>Where is the place?</li>
+               <li>What is the cost? Is it in line with the initial budget?</li>
+               <h4 style="font-weight: 600;">
+                  <i>
+                  Come to JADON - professional and prestigious event management company, we will answer all your problems!
+                  </i>
+               </h4>
+               <img src="member.jpg" class="img-responsive" alt="" style="margin-left: 100px; width: 400px">
+               <figcaption style="text-align: center;">
+                  <i>Event Organizer JADON - Event Organizer Professional, Reliable and Affordable</i>
+               </figcaption>
+               <hr>
+               <div class="col-md-6">
+                  <div class="container-overlay">
+                     <img src="harvard-club-wedding-15-1024x691.jpg" alt="Avatar" class="image" class="img-responsive">
+                     <div class="overlay">
+                        <div class="text"><a href="dich-vu-tiec-cuoi.html" style="color: white">Learn More</a></div>
+                     </div>
+                  </div>
+                  <figcaption style="text-align: center;"><i>Weddings</i></figcaption>
+               </div>
+               <div class="col-md-6">
+                    <div class="container-overlay">
+                     <img src="maxresdefault.jpg" alt="Avatar" class="image" class="img-responsive" style="height: 200px">
+                     <div class="overlay">
+                        <div class="text"><a href="event.html" style="color: white">Learn More</a></div>
+                     </div>
+                  </div>
+                  <figcaption style="text-align: center;"><i>EVENT ORGANIZATION</i></figcaption>  
+               </div>
+
+               <div class="clearfix"></div>
+
+               <div class="col-md-6">
+                  <div class="container-overlay">
+                     <img src="DSC_0396.jpg" alt="Avatar" class="image" class="img-responsive" >
+                     <div class="overlay">
+                        <div class="text"><a href="su-kien.html" style="color: white">Learn More</a></div>
+                     </div>
+                  </div>
+                  <figcaption style="text-align: center;"><i>Conferences</i></figcaption>
+               </div>
+               <div class="col-md-6">
+                  <div class="container-overlay">
+                     <img src="Event_1501476801.jpg" alt="Avatar" class="image" class="img-responsive">
+                     <div class="overlay">
+                        <div class="text"><a href="tiec-luu-dong.html" style="color: white">Learn More</a></div>
+                     </div>
+                  </div>
+                  <figcaption style="text-align: center;"><i>Music parties</i></figcaption>
+               </div>
+               <div class="clearfix"></div>
+               <h4 style="font-weight: 600;">
+                 What will you get from us?
+               </h4>
+               <b>1. Organizational service <i>Professional event - perfect</i></b><br>
+               <b>➤ Event facilities are modern and modern</b>
+               <p>
+                  JADON is a long-term partner of the supplier of stage equipment, sound, lighting ... modern and quality. We always meet all needs of the number, type of event equipment, accompanied by careful preparation, installation, safety. Make sure your event is successful, perfect.
+               </p>
+               <div class="col-md-12">
+                  <img src="cong-ty-to-chuc-su-kien-chuyen-nghiep-Vietwind-thiet-bi-to-chuc-su-kien-1024x372.jpg" class="img-responsive" class="img-thumbnail">
+                  <figcaption style="text-align: center;"><i>Modern Event Organizeri</i></figcaption>
+               </div>
+               <b>➤ Event venue is flexible and flexible</b>
+               <p>
+                  Any ideas on where to <i> organize the event </i> will be carefully reviewed by Vietwind and advise you to choose the most suitable location for your needs:
+               </p>
+               <li>
+                  <b> Luxury event venues: </b> Hotels, restaurants, convention centers
+               </li>
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0" ></li>
+                     <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                     <li data-target="#myCarousel" data-slide-to="3"></li>
+                     <li data-target="#myCarousel" data-slide-to="4"></li>
+                     <li data-target="#myCarousel" data-slide-to="5"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="ks.jpg" alt="Los Angeles">
+                     </div>
+                     <div class="item">
+                        <img src="ks2.jpg" alt="Chicago">
+                     </div>
+                     <div class="item">
+                        <img src="ks3.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="ks4.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="ks5.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="ks6.jpg" alt="New York">
+                     </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+               <hr>
+               <li>
+                  <b> Outdoor Event Venues: </b> Parks, resorts, ecotourism
+               </li>
+               <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                     <li data-target="#myCarousel" data-slide-to="0"></li>
+                     <li data-target="#myCarousel" data-slide-to="1"></li>
+                     <li data-target="#myCarousel" data-slide-to="2"></li>
+                     <li data-target="#myCarousel" data-slide-to="3"></li>
+                     <li data-target="#myCarousel" data-slide-to="4"></li>
+                     <li data-target="#myCarousel" data-slide-to="5"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                     <div class="item active">
+                        <img src="sk1.jpg" alt="Los Angeles">
+                     </div>
+                     <div class="item">
+                        <img src="sk2.jpg" alt="Chicago">
+                     </div>
+                     <div class="item">
+                        <img src="sk3.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="sk4.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="sk5.jpg" alt="New York">
+                     </div>
+                     <div class="item">
+                        <img src="sk6.jpg" alt="New York">
+                     </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+               </div>
+               <hr>
+               <li>
+                 <b> Event venues on demand: </b> Wherever you are, wherever you are, just make your request, Vietwind will always be with you.
+               </li>
+               <br>
+               <b>➤ Professional event organizers - enthusiastic</b>
+               <p>
+                  JASON is committed to providing a team of MC, PG, singers, actors carefully selected, trained professionally, always enthusiastic in work and sincere, dedicated in human beings.
+               </p>
+               <b>➤ Unique show - special</b>
+               <div class="row">
+                  <div class="col-md-12">
+                     <img src="dj.jpg" class="img-responsive" alt="" style="padding: 5px; float: left;">
+                     <figcaption><i>The art program is attractive, unique</i></figcaption>
+                     <p>
+                       Each event has a different goal, accompanied by different ideas and program content. We always listen to and advise on the performances that are appropriate for each event but can not lack the uniqueness, impressive and special.
+                     </p>
+                     <li>Music: Popular, professional singers on all music genres, depending on the nature of the event.</li>
+                     <li>Dance art: traditional dance, modern dance, 3D mapping dance, dance highlight, interactive dance light</li>
+                     <li>Other interesting programs: Painting cat, magic, circus, comedy ...</li>
+                  </div>
+               </div>
+
+               <br>
+               
+               <hr>
+               <p><b>2. Ideas - unique and compelling event scenarios</b></p>
+               <b>➤ Attractive in the script</b>
+               <p>
+                  Did you have an <i> idea for an event? </I> Want to get that idea in the most creative way? Then you just have to say that idea, while building the script is so attractive let JASON worry!
+               </p>
+               <p>
+                  A fun story, a life message, a film, a festival or even a traditional cultural space ... will be brought alive Vietwind in your event.
+               </p>
+               <b>➤ Unique in the idea</b>
+               <h4 style="color: red;font-weight: 600;">
+                  Have not thought of any interesting ideas for your event?
+               </h4>
+               <b> Do not worry! </b> Vietwind's experienced creative staff will advise you, create the most unique ideas for you and, of course, do not forget to show the corporate image throughout. in each program content.
+               <p><b>3. The cost of organizing the event is reasonable - competitive - clear</b></p>
+               <b>➤ Cost competitive and reasonable</b>
+               <p>
+                  <b> "Give your customers MAXIMUM VALUE with a MINIMUM COST" </b> is always JASON's top commitment.
+               </p>
+               <p>
+                  JASON does not provide our customers with an event service at the most affordable prices, we choose to offer the best service at the most competitive price.
+               </p>
+               <p>
+                  We understand that customers themselves are important to help JASON communicate, promote brands and services to customers and partners.
+               </p>
+               <p>
+                  We also understand that the prestige & professionalism of Vietwind will be affirmed when customers receive the satisfaction of a quality service, a professional working style and satisfied at a reasonable price.
+               </p>
+               <b>➤ Clear organization costs</b>
+               <p>
+                  <B> Event costs </b> are always explicitly and explicitly listed by JASON publicly. That will not be something you have to bother!
+               </p>
+               <p><b>4.Professional, dedicated and enthusiastic in JASON's event organization</b></p>
+               <p><b>Professional - Devoted - The enthusiasm is the three criteria are always top JASON personnel.</b></p>
+               <b>➤ Professional in the profession</b>
+               <p>
+                  JASON staffs have at least 2 years of experience, are regularly trained in professional knowledge and always understand:
+               </p>
+               → Responsibility in their work<br>
+               → Responsibilities of each department in the company<br>
+               → The specific work of each position in each event program<br>
+               <p><b> ➤ Dedication in the process:</b></p>
+               → Motto: Do right from the beginning<br>
+               → Take the initiative to do the job, complete all items in the best way<br>
+               → Ability to handle and handle sensitive situations<br>
+               <p><b>➤ Enthusiasm in the work</b></p>
+               → Provide customers with optimal solutions, save money<br>
+               → Meet all needs arising quickly, efficiently<br>
+               → Customer satisfaction is our top priority<br>
+             
+            
+               <div class="col-md-4">
+                  <div class="panel panel-default panel-warning">
+                     <div class="panel-heading" style="background: #075e63 ; color:white;">FEATURES</div>
+                     <div class="panel-body">
+                        <table class="table table-hover">
+                           <thead>
+                              <tr>
+                                 <th>List of Features</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="panel panel-default panel-warning">
+                     <div class="panel-heading" style="background: #075e63; color: white;">FREE</div>
+                     <div class="panel-body">
+                        <table class="table table-hover">
+                           <thead>
+                              <tr>
+                                 <th>It's Free</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>✔</td>
+                              </tr>
+                              <tr>
+                                 <td>✖</td>
+                              </tr>
+                              <tr>
+                                 <td>✔</td>
+                              </tr>
+                              <tr>
+                                 <td>✔</td>
+                              </tr>
+                              <tr>
+                                 <td>✔</td>
+                              </tr>
+                              <tr>
+                                 <td>1</td>
+                              </tr>
+                              <tr>
+                                 <td>✖</td>
+                              </tr>
+                              <tr>
+                                 <td>✖</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="panel panel-default panel-warning">
+                     <div class="panel-heading" style="background: #075e63; color:white;">PLUS</div>
+                     <div class="panel-body">
+                        <table class="table table-hover">
+                           <thead>
+                              <tr>
+                                 <th>Get this in Just $59</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                              <tr>
+                                 <td>Front Page Elements</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+               <!-- REVIEWxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+
+
+               <h5>QUESTION ABOUT THE PRODUCT</h5>
+               <ul id="append_question" style="text-decoration-style: none; list-style: none; padding: 0px;">
+                  <li>
+                  </li>
+               </ul>
+               <input type="text" class="form-control" name="input_question">
+               <br>
+               <button type="submit" id="respond" class="btn btn-default" >Question</button>
+               <hr>
+               <div class="col-md-6">
+                  <h4 style="text-align: center;">
+                  Average rating</h4>
+                  <p style="color: red; font-weight: 600; font-size: 50px; text-align: center;" class="total-review-point">
+                     0/5
+                  </p>
+                  <!--1-->
+                  <span class="rating-box">
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  <span class="fa fa-star checked"></span>
+                  </span>
+                  <p style="text-align: center" class="count_comment">
+                     (There are 0 reviews)
+                  </p>
+               </div>
+               <div class="col-md-6">
+                  <div class="side">
+                     <div>5 star</div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container" id="bar-5">
+                        <div class="bar-5" id="green"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star5">
+                     <div>&nbsp&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>4 star</div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-4" id="blue"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star4">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>3 star</div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-3" id="light_blue"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star3">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>2 star</div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-2"  id="oranges"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star2">
+                     <div>&nbsp</div>
+                  </div>
+                  <div class="side">
+                     <div>1 star</div>
+                  </div>
+                  <div class="middle">
+                     <div class="bar-container">
+                        <div class="bar-1" id="red"></div>
+                     </div>
+                  </div>
+                  <div class="side right" id="star1">
+                     <div>&nbsp&nbsp</div>
+                  </div>
+               </div>
+               <div class="clearfix"></div>
+               <hr>
+               <div class="col-md-12">
+                  <div class="panel panel-default panel-body">
+                     <h4><b>Share a comment about your service</b></h4>
+                     <button class="btn btn-primary" id="write_comment">REVIEW</button>		
+                  </div>
+               </div>
+               <!--End Rating-->
+               <!--List raing-->
+               <div class="row">
+                  <div class="col-12">
+                     <p>Check out the review</p>
+                     <p id="append"></p>
+                  </div>
+               </div>
+               <!--End List-->
+               <div id="popup" >
+                  <h5>Send your comment</h5>
+                  <p style="margin: 0px;">What your name ?</p>
+                  <input type="text" name="user_name" class="form-control" id="user_name">
+                  <form>
+                     <p style="float: left;">1.Review of this product.</p>
+                     <section class='rating-widget'>
+                        <!-- Rating Stars Box -->
+                        <div class='rating-stars text-center'>
+                           <ul id='stars'>
+                              <li class='star' title='Poor' data-value='1'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Fair' data-value='2'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Good' data-value='3'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='Excellent' data-value='4'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                              <li class='star' title='WOW!!!' data-value='5'>
+                                 <i class='fa fa-star fa-fw'></i>
+                              </li>
+                           </ul>
+                        </div>
+                     </section>
+                     <!-- <div class="clear"></div>
+                        <div class='success-box'>
+                          <div class='clearfix'></div>
+                          <div class='text-message'></div>
+                          <div class='clearfix'></div>
+                        </div> -->
+                        <br></br>
+                     2.Comment title:
+                     <div class="form-group">
+                        <input type="text" name="title_comment" class="form-control" id ="title_comment">
+                     </div>
+                     3.Write your review below:
+                     <textarea style="width: 70%;" id="textarea"></textarea>
+                     <br>
+                     <input type="submit" name="action_respont" id="action_respont" >
+                  </form>
+                  <button id="hide">x</button>
+               </div>
+
+
+               <!--END REVIEW-->
+            </div>
+            <div class="col-md-3">
+               <div class="panel panel-body panel-default">
+                  <div class="panel-heading" style="background: black;color: white">NEWS</div>
+                  <div class="panel-body">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <img src="u23-vit-nam-vit-tip-lch-s_1gl2c220jfmxw1lg566uoh3lof-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br>	
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/khuyen-mai-mung-tuyen-u23-viet-nam-chien-thang.html" style="color: black">PROMOTE U23 VIETNAM WINNER</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="13-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br>	
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/tiec-tat-nien.html" style="color: black">YEAR-END PARTY</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="7-1-457x257.jpg" class="img-responsive" style="width:100%" alt="Image"><br>	
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/giang-sinh-ap.html" style="color: black">CHRISTMAS IN JASON</a>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-md-6">
+                           <img src="26731371_1992184654381756_7993087365985946510_n-457x257.png" class="img-responsive" style="width:100%" alt="Image"><br>	
+                        </div>
+                        <div class="col-md-6">
+                           <a href="http://tranganpalace.vn/tin-tuc/trang-palace-noi-to-chuc-su-kien-chuyen-nghiep-uy-tin-cho-cac-cong-ty-tai-ha-noi.html" style="color: black">EVENT ORGANIZATION OF THE GROUP</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="panel panel-body panel-default">
+                  <div class="panel-heading" style="background: black;color: white">SIGN UP</div>
+                  <div class="panel-body">
+                     <p>Sign up for the latest JASON event newsletters</p>
+                     <form>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                           <input type="text" class="form-control" id="username" placeholder="Vui lòng nhập đầy đủ họ tên" required>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                           <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <br>
+                        <div class="input-group">
+                           <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                           <input type="text" class="form-control" id="phone_number" placeholder="Số điện thoại" required>
+                        </div>
+                        <br>
+                        <button type="submit" class="btn btn-default">Submit</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="panel panel-body panel-default">
+            <div class="panel-heading" style="background: black;color: white">
+               <span style="font-weight: 600;text-align: center;">RELATED ARTICLES</span>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="#" class="thumbnail">
+                  <img src="to-chuc-giang-sinh-hanoi-night-club16-370x220.jpg" alt="...">
+                  <figcaption style="color: black">Noel - HN Night Club</figcaption>
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="#" class="thumbnail">
+                  <img src="tiec-cuoi-nam-green-feed-viet-nam13-370x220.jpg" alt="...">
+                  <figcaption style="color: black">Holding a year-end party</figcaption>
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="#" class="thumbnail">
+                  <img src="hoi-thao-tham-my-topaz-beauty1-370x220.jpg" alt="...">
+                  <figcaption style="color: black">Organize the conference gratitude to customers</figcaption>
+               </a>
+            </div>
+            <div class="col-xs-6 col-md-3">
+               <a href="#" class="thumbnail">
+                  <img src="khai-truong-lotteria-ham-nghi8-370x220.jpg" alt="...">
+                  <figcaption style="color: black">Opening shop</figcaption>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!------------------ (footer ) -------------------->
+
+      <footer class="nb-footer" id="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <div class="about">
+
+                     <div class="social-media">
+                       <ul class="list-inline">
+                         <li><a href="https://www.facebook.com/" title=""><i class="fa fa-facebook" style="color: #009dac;"></i></a></li>
+                         <li><a href="https://www.twitter.com/" title=""><i class="fa fa-twitter" style="color: #009dac;"></i></a></li>
+                         <li><a href="https://www.plus.google.com" title=""><i class="fa fa-google-plus" style="color: #009dac;"></i></a></li>
+                         <li><a href="https://www.linkedin.com/" title=""><i class="fa fa-linkedin" style="color: #009dac;"></i></a></li>
+                      </ul>
+                   </div>
+                </div>
+             </div>
+
+
+
+
+
+             <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="footer-info-single">
+                  <img src="logo2.png" style="width: 70%">
+                  <br>
+                  <br>
+                  <p><i class="fa fa-angle-double-right"></i> Address: 368 Nguyen Trai / Nam Tu Liem.
+                     <p><i class="fa fa-angle-double-right"></i> Phone: +84.1654.304.500</p>
+                     <p><i class="fa fa-angle-double-right"></i> Website: www.myeventstreet.co.uk</p>
+                  </p>
+               </div>
+            </div>
+
+
+
+            <div class="col-md-3 col-sm-6 col-xs-6">
+               <div class="footer-info-single">
+                  <h2 class="title" style="font-weight: 600 !important">Help Center</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> How to Pay</a></li>
+                    <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                    <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sitemap</a></li>
+                    <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Delivery Info</a></li>
+                 </ul>
+              </div>
+           </div>
+
+           <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="footer-info-single">
+               <h2 class="title" style="font-weight: 600 !important">Customer information</h2>
+               <ul class="list-unstyled">
+                 <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> About Us</a></li>
+                 <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> FAQ's</a></li>
+                 <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Sell Your Items</a></li>
+                 <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Contact Us</a></li>
+                 <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> RSS</a></li>
+              </ul>
+           </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6 col-xs-12">
+         <div class="footer-info-single">
+            <h2 class="title" style="font-weight: 600 !important">Security & privacy</h2>
+            <ul class="list-unstyled">
+              <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Terms Of Use</a></li>
+              <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Privacy Policy</a></li>
+              <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Return / Refund Policy</a></li>
+              <li><a href="#" title=""><i class="fa fa-angle-double-right"></i> Store Locations</a></li>
+           </ul>
+        </div>
+     </div>
+
+
+  </div>
+</div>
+
+<section class="copyright">
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-6">
+            <p>Copyright © 2018. JADON Event Mangagerment Service</p>
+         </div>
+         <div class="col-sm-6"></div>
+      </div>
+   </div>
+</section>
+</footer>
+   </body>
+
+</html>

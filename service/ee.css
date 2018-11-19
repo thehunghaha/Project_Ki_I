@@ -1,0 +1,344 @@
+.icon_question_like{
+	color:#777676;
+}
+.icon_question_like:hover{
+	color:black;
+}
+.icon_question_rep{
+	color:#777676;
+}
+.icon_question_rep:hover{
+	color:black;
+}
+.total-review-point{
+	color: #fe302e;
+	font-size: 47px;
+	font-weight: 500;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0 auto; /* Center website */
+    max-width: 800px; /* Max width */
+    padding: 20px;
+}
+
+.heading {
+    font-size: 15px;
+    margin-right: 25px;
+}
+
+.fa {
+    font-size: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Three column layout */
+.side {
+    float: left;
+    width: 15%;
+    margin-top:10px;
+}
+
+.middle {
+    margin-top:10px;
+    float: left;
+    width: 70%;
+}
+
+/* Place text to the right */
+.right {
+    text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The bar container */
+.bar-container {
+    width: 100%;
+    background-color: #e8e8e5 ;
+    text-align: center;
+	border-radius: 10px;
+    color: white;
+}
+
+/* Individual bars */
+
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 400px) {
+    .side, .middle {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+.border{
+	border-radius: 5px 0 0 5px; ;
+}
+#write_comment{
+	color: #4a4a4a;
+	background-color: #fdd22f;
+	line-height: 1.42857;
+	font-size: 13px;
+	padding: 15px;
+	font-weight: bold;
+}
+.js-customer-button{
+	margin-top: 30px;
+}
+.image_user{
+	height: 200px;
+	background-color: red;
+}
+.review_detail{
+	margin-bottom: 5px;
+}
+.review{
+	float: left;
+	margin: 0px 0px 0 10px;
+
+}
+.star_show{
+	float: left;
+	margin:0px;
+}
+.buy_already{
+	clear: both;
+	font-size: 12px;
+	margin: 0px 0px 5px 0px;
+}
+.buy_already{
+	color:#34872f;
+}
+.share{
+	float: left;
+	margin-left: 10px;
+}
+.review_action{
+	float: left;
+}
+.link span{
+	float: left;
+
+	margin-left: 10px;
+	display: block;
+}
+.link button{
+	float: left;
+	background: url('link.png')  2px 2px no-repeat #fdd22f;
+	margin-left: 10px;
+	color:black;
+}
+.link button:hover{
+	background: #88f981;
+	color:black;
+	text-align: center;
+
+}
+.clear{
+	clear: both;
+}
+.item{
+	margin:10px;
+}
+#popup{
+	height: 200px;
+	width: 500px;
+	position: fixed;
+	bottom:20px; 
+	right: 0px;
+	background: #d8d8d8;
+	border-radius: 10px;
+	display: block;
+    overflow: scroll;
+
+}
+
+<!---Star------------------------------------------------------------>
+body {
+  font-family:"Open Sans", Helvetica, Arial, sans-serif;
+  color:#555;
+  max-width:680px;
+  margin:0 auto;
+  padding:0 20px;
+}
+
+* {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+*:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.clearfix {
+  clear:both;
+}
+
+.text-center {text-align:center;}
+
+pre {
+display: block;
+padding: 9.5px;
+margin: 0 0 10px;
+font-size: 13px;
+line-height: 1.42857143;
+color: #333;
+word-break: break-all;
+word-wrap: break-word;
+background-color: #F5F5F5;
+border: 1px solid #CCC;
+border-radius: 4px;
+}
+
+.header {
+  padding:20px 0;
+  position:relative;
+  margin-bottom:10px;
+  
+}
+
+.header:after {
+  content:"";
+  display:block;
+  height:1px;
+  background:#eee;
+  position:absolute; 
+  left:30%; right:30%;
+}
+
+.header h2 {
+  font-size:3em;
+  font-weight:300;
+  margin-bottom:0.2em;
+}
+
+.header p {
+  font-size:14px;
+}
+
+#star_medium{
+	margin-left: 180px;
+}
+.success-box {
+  margin:50px 0;
+  padding:10px 10px;
+  border:1px solid #eee;
+  background:#f9f9f9;
+}
+
+.success-box img {
+  margin-right:10px;
+  display:inline-block;
+  vertical-align:top;
+}
+
+.success-box > div {
+  vertical-align:top;
+  display:inline-block;
+  color:#888;
+}
+
+
+<!----STAR->
+/* Rating Star Widgets Style */
+.rating-stars ul {
+  list-style-type:none;
+  padding:0;
+  
+  -moz-user-select:none;
+  -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+  display:inline-block;
+  
+}
+
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+  font-size:2.5em; /* Change the size of the stars */
+  color:#ccc; /* Color on idle state */
+}
+
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+  color:#FFCC36;
+}
+
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+  color:#FF912C;
+}
+
+.rating-widget{
+	float: left;
+	font-size: 10px;
+}
+<----->
+
+.question_div{
+	background-color: white; width: 100%; border-radius: 5px;
+}
+.question_div ul li{
+	border-bottom: 0.4px solid #c6c4c4 ;
+}
+.row1{
+	margin: 10px; width: 100%;
+}
+.col1{
+	font-size: 24px; text-align: center;
+}
+
+
+
+
+
+
+
+-----------------------------------------------------------------
+	span.starsd, span.starsd span {
+			display: block;
+			background: url(http://www.ulmanen.fi/stuff/stars.png) 0 -15px repeat-x;
+			width: 80px;
+			height: 16px;
+		}
+		span.starsd span {
+			background-position: 0 0;
+		}
+#hide{
+	z-index: 99999999;
+	position: fixed;
+	bottom: 190px;
+	right: 20px;
+}
+-----------------------------------------------------------------
+	span.starsdd, span.starsdd span {
+			display: block;
+			background: url(http://www.ulmanen.fi/stuff/stars.png) 0 -15px repeat-x;
+			width: 80px;
+			height: 16px;
+		}
+		span.starsdd span {
+			background-position: 0 0;
+		}
+
+.like{
+	color: #4589f7;
+}
+

@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+  <title>login</title>
+  
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script> <script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+
+        <style>
+        .formBox{
+  margin-top: 50px;
+  padding: 50px;
+  z-index: 999;
+}
+.formBox  h1{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: 48px;
+  z-index: 9999;
+}
+.inputBox{
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 50px;
+}
+.inputBox .inputText{
+  position: absolute;
+    font-size: 24px;
+    line-height: 50px;
+    transition: .5s;
+    opacity: .5;
+}
+.inputBox .input{
+  position: relative;
+  width: 70%;
+  height: 30px;
+  background: transparent;
+  border: none;
+    outline: none;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(0,0,0,.5);
+    margin-left: 15%;
+
+}
+
+.focus .inputText{
+  transform: translateY(-30px);
+  font-size: 18px;
+  opacity: 1;
+  color: #00bcd4;
+
+}
+textarea{
+  height: 100px !important;
+}
+.button{
+  width: 100%;
+    height: 50px;
+    border: 2px solid #03A9F4;
+    outline: none;
+    background: #03A9F4;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+body {
+  background: white;
+  
+}
+
+h3 {
+  margin-top: 50px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.wrapper {
+  background: #9387c6;
+  margin: 10px;
+}
+
+.content {
+  font-family: Arial;
+  background: #9387c6;
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+  height: 100px;
+}
+
+.triangle-down{
+    box-sizing: content-box;
+    width: 50%; 
+    height: 0;
+    padding-left:50%;
+    padding-top: 5%; 
+    overflow: hidden;
+}
+.triangle-down div {
+    width: 0;
+    height: 0;
+    margin-left:-1000px; 
+    margin-top:-100px; 
+    border-left: 1000px solid transparent; 
+    border-right: 1000px solid transparent; 
+    border-top: 100px solid #9387c6; 
+}
+        </style>
+        <!-- <label class="control-label col-sm-2" for="email">Full name*:</label> -->
+</head>
+<body>
+  <div class="row text-center">
+    <div class="content" >
+    <h3 style="font-size:15̀%;">
+Thank you for choosing us. We will contact you after 24h </h3>
+</div
+  
+<div class="wrapper">
+    <div class="triangle-down"><div></div></div>
+</div>  
+  </div>
+
+<div class="container-fluid">
+    <div class="container">
+      <div class="formBox">
+        <form>
+          
+        <div class="user" style="border: 1px solid #009dac;">
+          <h3 style="text-align: center;padding-top: 15px;"> Information user</h3> 
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox ">
+                  <div class="inputText"></div>
+                  <input type="text"  class="input input1" placeholder="Full-name" required="ban nhap sai">
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  <div class="inputText"></div>
+                  <input type="text"  class="input input2" placeholder="Phone number" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  <div class="inputText"></div>
+                  <input type="text"  class="input input3" placeholder="Addres" required>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div class="inputBox">
+                  
+                  <input type="text" class="input input4" placeholder="Gender" required>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12">
+                <div class="inputBox">
+                 
+                  <textarea class="input input5" placeholder="Comment" required></textarea>
+                </div>
+              </div>
+            </div>
+
+            </div>
+           
+
+<div class="choose products" style="border: 1px solid #009dac;margin-top: 15px; padding-bottom:15px; ">
+  <h3 class="text-center">Choose products</h3>
+    <div class="form-group" style="width: 75%;margin-left: 13%;">
+  <label for="sel1">Benefit package:</label>
+  
+  <select class="form-control" id="plan">
+    
+    <option value="Metting">Metting</option>
+    <option value="Wedding">Wedding
+    </option>
+    <option value="Event">Event</option>
+    <option value="Birthday"> Birthday</option>
+    <option value="Musicparty"> Musicparty</option>
+    <option value="Conference">Conference</option>
+  </select>
+</div>
+ <div class="form-group" style="width: 75%;margin-left: 13%;">
+  <label for="sel1">Pricing:</label>
+  
+  <select class="form-control" id="period">
+    
+    <option value="Basic">Basic</option>
+    <option value="Pro">Pro</option>
+    <option value="Premium">Premium</option>
+  </select>
+</div>
+ <div class="form-group" style="width: 75%;margin-left: 13%;">
+  <label for="sel1">Number of seats:</label>
+  
+  <select class="form-control" id="period1">
+    
+    <option value="Basic">200</option>
+    <option value="Pro">300</option>
+    <option value="Premium">400</option>
+  </select>
+</div>
+  
+  
+  <br />
+  <div class="form-group" style="width: 75%;margin-left: 13%;">
+                Price($):<input type="text" id="total" value="0" size="5"> 
+              </div></div>
+              <br><br>
+
+<button class="btn btn-primary btn-lg btn-block" type="submit" id="submit_1" class="font-size:15̀%;">Register to create an event now</button>
+            </form>
+  
+</div>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script>
+  (function($)
+  { 
+    var plans = 
+    {
+      Metting : 15000,
+      Wedding : 2000,
+      Event : 25000,
+      Birthday:20000,
+        Musicparty:50000,
+      Conference : 30000
+    }
+    var period1s = 
+    {
+      Basic   : 200,
+      Pro : 300,
+      Premium : 400
+      
+    }
+
+    var periods =
+    {
+      Basic   : 1,
+      Pro : 1.5,
+      Premium : 2
+      
+    }
+
+    $("#plan").change(function(){calc_and_show_total();})   
+    $("#period").change(function(){calc_and_show_total();})   
+    $("#period1").change(function(){calc_and_show_total();})  
+    function calc_and_show_total()
+    {
+      var plan    = plans[$("#plan").val()];
+      var period    = periods[$("#period").val()];
+       var period1    = period1s[$("#period1").val()];
+      $("#total").val('$' + (plan*period+period1));
+      $("#details").val(
+        "("+ $("#plan :selected").text() +") " + plan + 
+        " * " + " ("+ $("#period :selected").text() +") " + period + " + " + " ("+ $("#period1 :selected").text() +") " + period1
+      );
+    }
+
+    // initialize our total
+    calc_and_show_total();
+    
+  })(this.jQuery);
+
+
+    $("#submit_1").click(function(e){
+      e.preventDefault();
+      var input1 = $(".input1").val();
+      var input2 = $(".input2").val();
+      var input3 = $(".input3").val();
+      var input4 = $(".input4").val();
+      var input5 = $(".input5").val();
+      if( input1 != '' && input2 != '' && input3 != '' && input4 != '' && input5 != '')
+      {
+        alert("submit Succsess !");
+      }
+      else{
+        alert("false");
+      }
+
+});
+  </script>
+  
+  
+</body>
+</html>
